@@ -1,0 +1,35 @@
+<div id="addNewModal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-body">
+
+        <div>
+            <textarea id="newpost-comment" ng-model="form.comment" placeholder="Please share a comment about this article..."></textarea>
+        </div>
+
+        <div id="article-card-container">
+            <div class="article-small-card">
+                <img ng-src="{{ article.imageUrl }}">
+                <div class="title">
+                    <a href="{{ article.url }}" target="_blank">{{ article.title }}</a>
+                    <div class="meta">
+                        <span class="date">{{ article.publishedDateTime|fromNow }}</span>
+                    </div>
+                </div>
+                <div class="widget-cse__content__item-excerpt">{{ article.excerpt }}</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div>
+            Learning Community: <br/>
+            <select
+                    ng-change="selectCommunity()"
+                    required="required"
+                    ng-model="form.selectedCommunity"
+                    ng-options="community.id as community.name for community in communities">
+            </select>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+

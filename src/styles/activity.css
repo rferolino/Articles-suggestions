@@ -1,0 +1,98 @@
+/* Common */
+/* SECTION HEADER TITLES
+-------------------------------------------------------------------- */
+div.sectionheader[class], div.sectionheadernoline[class] {overflow:hidden;}
+div.sectionheader:lang(en), div.sectionheadernoline:lang(en) {overflow:hidden;}
+div.sectionheader, div.sectionheadernoline{margin:5px 0px;padding:3px 3px 2px 3px;}
+div.sectionheader {border-bottom:1px solid #ccc;}
+div.sectionheader-left{float:left;font-weight:bold;line-height:1.85em;}
+div.sectionheader-left h1,div.sectionheader-left h2,div.sectionheader-left h3,div.sectionheader-left h4,div.sectionheader-left h5,div.sectionheader-left h6{margin:0px;}
+div.sectionheader-right{float:right;line-height:1.85em;}
+
+/* recent activity */
+.aes-recentactivity-list .sectionheader {border-bottom:1px solid #cbcbcb;margin-bottom:0;padding-bottom:5px}
+.aes-recentactivity-list .aes-listing {border:none;}
+.aes-recentactivity-list ul{margin:0;padding:0; clear:both}
+.aes-recentactivity-list li{list-style:none}
+/* recent activity - top */
+.aes-recentactivity-list .sectionheader {padding-bottom:0}
+.aes-recentactivity-list .sectionheader {*padding-bottom:3px;}
+.aes-recentactivity-list .sectionheader > div > a {line-height: 27px;}
+.aes-recentactivity-list .sectionheader > div > a {line-height: 20px\9;}
+.aes-recentactivity-list .sectionheader-left h2 {*margin-top: 2px;}
+.aes-recentactivity-list .act-filter,
+	.aes-recentactivity-list .actactions{clear:both;}
+.aes-recentactivity-list .act-filter,
+	.aes-recentactivity-list .actactions{overflow:hidden;}
+.aes-recentactivity-list .act-filter {padding:2px; margin:0; background-color:#F5F5F5;border-bottom:1px solid #E5E5E5;}
+.aes-recentactivity-list .act-filter {*padding-bottom:8px;}
+.aes-recentactivity-list .act-filter ul{*height:30px;}
+.aes-recentactivity-list .act-filter ul li{float: left;font-size: 0.9em;font-weight: bold;list-style-type: none;margin: 5px 4px;padding:4px 2px;}
+.aes-recentactivity-list .act-filter ul li {padding:5px 2px\9;}
+.aes-recentactivity-list .act-filter ul li {*padding:6px 2px 5px;}
+.aes-recentactivity-list .act-filter ul li a{padding:4px 8px;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;/*color:#094A72;*/}
+.aes-recentactivity-list .act-filter ul li a:hover{border: none; text-decoration:none; /*color:#0694DF*/;background-color: #fff;}
+.aes-recentactivity-list .act-filter ul li.active a{background-color: #fff; border: 1px solid #CFCFCF;padding:4px 7px;}
+.aes-recentactivity-list li.actactions ul li{padding:0;}
+.aes-recentactivity-list li.actactions ul li.title {font-weight:bold; padding-left:0; color:#333}
+.aes-recentactivity-list ul.aes-act-listing li{border-bottom:1px solid #E5E5E5;}
+.aes-recentactivity-list div.aes-listing > span > div > ul {*margin-top:-8px;}
+.aes-recentactivity-list ul.aes-act-listing li.msg-local,
+	.aes-recentactivity-list ul.aes-act-listing li.error-local,
+	.aes-recentactivity-list ul.aes-act-listing li.moreactlink,
+	.aes-recentactivity-list ul.aes-act-listing li.act-filter ul li,
+	.aes-recentactivity-list ul.aes-act-listing li.actactions,
+	.aes-recentactivity-list ul.aes-act-listing li.actactions ul.actlinks li {border-bottom:none;}
+.aes-recentactivity-list ul.aes-act-listing li.actactions {padding: 0 0 15px;}
+.aes-recentactivity-list ul.aes-act-listing li.msg-local,
+	.aes-recentactivity-list ul.aes-act-listing li.error-local{padding-bottom:0}
+/* recent activity - list */
+.aes-recentactivity-list {padding-right: 15px;}
+.aes-recentactivity-list .sectionheader .phxc-link{padding-left:10px;}
+.aes-recentactivity-list .sectionheader h2.thirdpagetitle,.aes-recentactivity-list .sectionheader h2.fourthpagetitle{line-height: 26px;}
+.aes-recentactivity-list .sectionheader h2.secpagetitle{line-height:24px;}
+.aes-recentactivity-list .sectionheader h2.secpagetitle{*line-height: 18px;}
+.aes-recentactivity-list a.customizeview {font-size:.8em; line-height:2em}
+.aes-recentactivity-list li{padding:15px 0;}
+.aes-recentactivity-list ul.aes-act-listing li{*padding-bottom:5px;}
+.aes-recentactivity-list li.firstactivity {*margin-top:-3px;}
+.aes-recentactivity-list li.moreactlink{margin-bottom:0;padding:10px 0 5px;}
+.aes-recentactivity-list li.moreactlink .error-local{margin-left:50px}
+.aes-recentactivity-list .phxc-act{clear:both;}
+.aes-recentactivity-list .phxc-act{*border-bottom:1px solid #E5E5E5;*padding-bottom:10px;}
+.aes-recentactivity-list .phxc-act,.aes-recentactivity-list .phxc-act .phxc-info{overflow:hidden;}
+.aes-recentactivity-list .phxc-act .phxc-thumb{float:left;margin-right:15px;}
+.aes-recentactivity-list .phxc-act .phxc-thumb img{width:35px;height:35px;border:1px solid #DADADA;padding: 2px;}
+.aes-recentactivity-list .phxc-act .phxc-info span,
+.aes-recentactivity-list .phxc-act .phxc-info a{font-size:11px;*font-size:12px;}
+.aes-recentactivity-list .phxc-act .phxc-info a.title {/*color:#055e7b;*/font-size:14px;font-weight:bold;line-height:16px}
+.aes-recentactivity-list .phxc-act .phxc-info a{margin-right:6px}
+.aes-recentactivity-list .phxc-act .phxc-info a.readmore{font-size:inherit;*font-size:13px;}
+.aes-recentactivity-list .phxc-act .phxc-info p {margin: 0; line-height: 18px;}
+.aes-recentactivity-list .phxc-act .phxc-info p > span{margin:3px 0 0;font-size:12px;color:#666;line-height:14px}
+.aes-recentactivity-list .phxc-act .phxc-info .name{margin-right:6px;font-size:14px;line-height:16px}
+.aes-recentactivity-list .phxc-act .phxc-info .action {line-height:16px;*margin-right:6px;display:inline-block;*display:inline;zoom:1;}
+.aes-recentactivity-list .phxc-act .phxc-info .action,
+.aes-recentactivity-list .phxc-act .phxc-info .grpinfo{color:#000;font-size:14px}
+.aes-recentactivity-list .phxc-act .phxc-info div.feedback{margin:0}
+.aes-recentactivity-list .phxc-act .phxc-info .time{color:#ababab;font-size:11px;*display:inline;*zoom:1;*padding-right:2px;}
+.aes-recentactivity-list .phxc-act .phxc-info .separator {margin:0;*margin:0 2px;color:#ababab}
+.aes-recentactivity-list a.expandarrow-icon {margin-left:55px;}
+.aes-recentactivity-list .phxc-act .phxc-info span.cmtname{margin-left:10px}
+.aes-recentactivity-list .phxc-act .phxc-info span.rplname{margin-left:5px}
+.aes-recentactivity-list .phxc-act .phxc-info .grpname,
+	.aes-recentactivity-list .phxc-act .phxc-info .cmtnum,
+	.aes-recentactivity-list .phxc-act .phxc-info .cmtname,
+	.aes-recentactivity-list .phxc-act .phxc-info .bkmnum,
+	.aes-recentactivity-list .phxc-act .phxc-info .bkmname,
+	.aes-recentactivity-list .phxc-act .phxc-info .rplnum,
+	.aes-recentactivity-list .phxc-act .phxc-info .rplname{color:#74800d;}
+.aes-recentactivity-list .phxc-act .phxc-info .rplname,
+	.aes-recentactivity-list .phxc-act .phxc-info .cmtname{display:inline-block;}
+.aes-recentactivity-list .msg-local.seperator{padding:10px 0 16px 50px; margin:0 0 10px 0;}
+.aes-recentactivity-list .msg-local .aes-loading {margin: 0;padding-left: 0; width: auto;}
+.aes-recentactivity-list div.loading-local {width:auto; margin-bottom:0}
+.aes-recentactivity-list li ul.actlinks li {margin-bottom:10px}
+.aes-loading > .aes-animation {background: transparent url(images/standard-throbber.gif) no-repeat 0 0;display:inline-block;height:20px;vertical-align:text-bottom;width:20px;}
+/* Error image without background */
+div.errormessage {background:url(images/error-msg.jpg);}

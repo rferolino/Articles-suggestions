@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class=" ext-strict">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <script>var _pageStartTime = Number(new Date());</script>
+
+    <% if (config.environment === 'prod') { %>
+    <link rel="stylesheet" href="/styles/cse-widget.min.css?v=<%= config.hash('./.temp/styles/cse-widget.min.css') %>" />
+    <% } else { %>
+    <link rel="stylesheet" href="/styles/cse-widget.css?v=<%= config.hash('./.temp/styles/cse-widget.css') %>" />
+    <% } %>
+
+    <link type="text/css" rel="stylesheet" href="/styles/activity.css">
+
+</head>
+<body class="ext-webkit ext-chrome ext-mac chatblurred" role="document" id="">
+<div class="head">
+
+
+    <title>eCampus: Home</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="keywords"
+          content="University of Phoenix,University of Pheonix,accreditation,admission requirements,admissions,adult education,application for admission,bachelors degree,campus locations,certificate courses,college admissions,college campuses,college degrees online,college tuition costs,getting started,graduate degree,masters degree,mission and purpose,online college classes,online courses,online degree,online degrees,online programs,phd,phoenix online courses,Phoenix University,scholarships,student experience,tuition and fees,tuition and financial options,university of pheonix tuition,university of phoenix campus locations,university of phoenix admission requirements">
+    <meta http-equiv="description"
+          content="University of Phoenix offers campus and online degree programs, certificate courses, and individual online classes. Learn more about admissions, accreditation, tuition and financial aid options, or get started with your enrollment today.">
+    <meta name="Author" content="University of Phoenix">
+    <meta name="Identifier-URL" content="https://ecampus.phoenix.edu">
+    <meta name="audience" content="General">
+    <meta name="distribution" content="Global">
+    <meta name="Topaz Monitor" content="Apollo.Portal.Content.Home ServerName=plaxwcmp043.ols.phoenix.edu">
+
+
+    <link rel="icon" href="/apps/ecampus/docroot/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/apps/ecampus/docroot/favicon.ico" type="image/x-icon">
+
+
+    <script type="text/javascript" src="https://assets.phoenix.edu/0.2/core/3.4/js/global.js"></script>
+    <script type="text/javascript"
+            src="https://portal.phoenix.edu/etc/apollogrp/javascripts/thirdparty/jquery-1-3-2/jquery-min.js"></script>
+    <script type="text/javascript"
+            src="https://assets.phoenix.edu/0.2/jsfw/jquery/jquery-ui-1.7.2/jquery-ui-1.7.2.min.js"></script>
+    <script type="text/javascript" src="https://portal.phoenix.edu/assets/javascripts/ecampus/ext-base.js"></script>
+    <script type="text/javascript" src="https://portal.phoenix.edu/assets/javascripts/ecampus/ext-all.js"></script>
+    <script type="text/javascript" src="https://assets.phoenix.edu/0.2/js/analytics.js"></script>
+    <script type="text/javascript"
+            src="https://portal.phoenix.edu/assets/javascripts/activitystream/webcms-activitystream-all-1.1.28.405153.js?a=1"></script>
+    <script type="text/javascript" src="https://portal.phoenix.edu/assets/javascripts/uop/webcms-uop.js"></script>
+
+
+    <link href="https://assets.phoenix.edu/0.2/themes/cob/3.4/css/jive-global-slim.css" rel="stylesheet"
+          type="text/css">
+    <link href="https://assets.phoenix.edu/0.2/themes/cob/3.4/css/jive-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://assets.phoenix.edu/0.2/cssfw/yahoo/2.7.0/yui-core.css" rel="stylesheet" type="text/css">
+    <link href="https://assets.phoenix.edu/0.2/cssfw/yahoo/2.7.0/base-min.css" rel="stylesheet" type="text/css">
+    <link href="https://assets.phoenix.edu/0.2/core/3.4/css/core.css" rel="stylesheet" type="text/css">
+    <link href="https://assets.phoenix.edu/0.2/core/3.4/css/appElements.css" rel="stylesheet" type="text/css">
+    <link href="https://assets.phoenix.edu/0.2/themes/cob/3.4/css/appTheme.css" rel="stylesheet" type="text/css">
+    <link href="https://assets.phoenix.edu/0.2/themes/en-us/apg/common/css/appTheme.css" rel="stylesheet"
+          type="text/css">
+    <link href="https://assets.phoenix.edu/0.2/projects/cob/webcms/3.4/css/appElements.css" rel="stylesheet"
+          type="text/css">
+    <link href="https://assets.phoenix.edu/0.2/core/3.4/css/print.css" rel="stylesheet" type="text/css" media="print">
+    <link href="https://assets.phoenix.edu/0.2/projects/en-us/portal/common/css/appElements.css" rel="stylesheet" type="text/css">
+
+
+    <style>
+        div.data-edit, div.data-view {
+            margin: 0;
+        }
+
+        div.parbase, div.par, div.par-structure {
+            margin: 0;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+        .x-combo-list-item {
+            padding: 2px;
+            border: 1px solid;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border-color: #fff;
+            width: 100%;
+            text-align: left;
+        }
+
+        .x-combo-list .x-combo-selected {
+            border: 1px dotted !important;
+            cursor: pointer;
+            background-color: #deecfd;
+        }
+
+        .x-combo-list {
+            border-top: 1px solid;
+            border-color: #98c0f4;
+            background-color: #ddecfe;
+            font: normal 12px tahoma, arial, helvetica, sans-serif;
+            border-top-color: #98c0f4;
+            border: 1px solid;
+            zoom: 1;
+            overflow: hidden;
+            border-top: 1px solid;
+            border-bottom: 0 none;
+        }
+
+        .x-combo-list-inner {
+            overflow: auto;
+            position: relative;
+            zoom: 1;
+            overflow-x: hidden;
+            border-bottom: 1px solid;
+            background-color: #fff;
+            border-bottom-color: #98c0f4;
+        }
+    </style>
+</div>
+
+
+<div class="parsys pageLayoutPar">
+<div class="baselayout twocolumn section">
+
+<div id="doc4" class="yui-t5">
+<div class="hd-bkg">
+    <div id="hd" role="banner">
+        <div id="at-header">
+
+
+            <div class="headerLinks">
+                <div id="at-banner" class="clearfix">
+                    <div id="at-logo"><a href="/" title="University of Phoenix - Thinking ahead" id="logo-anchor"><img
+                            alt="University of Phoenix - Thinking ahead" id="logo"></a></div>
+                    <div id="at-topnav">
+                        <div id="at-topnavlinks">
+                            <div id="inner-at-topnavlinks">
+                                <ul class="h-list no-bullet" id="menu_newtop_nav">
+                                    <li id="menu_item_inbox"><a title="Inbox"
+                                                                href='#'
+                                                                id="anchor_inbox">Inbox</a>
+                                    </li>
+                                    <li id="menu_item_my_profile1"><a title="My Profile"
+                                                                      href="#">My Profile</a></li>
+                                    <li id="menu_item_whats_new"><a title="Whats New"
+                                                                    href='#'
+                                                                    id="anchor_whats_new">What's New</a></li>
+                                    <li id="menu_item_help"><a title="Help"
+                                                               href='#'
+                                                               id="anchor_help">Help</a>
+                                    </li>
+                                    <li id="menu_item_logout"><a title="Logout"
+                                                                 href="https://ecampus.phoenix.edu/portal/portal/secure/LogOut.aspx"
+                                                                 id="anchor_logout">Logout</a>
+                                    </li>
+                                </ul>
+                                <span class="welcome">Welcome Rolando Ferolino (IRN:9005639770)</span></div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="mainNav">
+
+
+                <div id="topNavMenu" class="at-tabs clearfix" role="navigation">
+                    <ul id="menu_nav_1">
+                        <li class="at-selected" id="menu_item_home"><a title="Home"
+                                                                       href="https://ecampus.phoenix.edu/portal/portal/secure/homepage.aspx"
+                                                                       class="tab-right" id="anchor_Home_nav_1"><em
+                                class="tab-left" style="display: none;"><span class="tab-inner"><span
+                                class="tab-text"><strong>Home</strong></span></span></em></a></li>
+                        <li id="menu_item_classroom"><a title="Classroom"
+                                                        href="https://ecampus.phoenix.edu/classroom/ic/classroom.aspx"
+                                                        class="tab-right" id="anchor_Classroom_nav_1"><em
+                                class="tab-left"><span class="tab-inner"><span
+                                class="tab-text"><strong>Classroom</strong></span></span></em></a></li>
+                        <li id="menu_item_library"><a title="Library"
+                                                      href="https://ecampus.phoenix.edu/classroom/ic/library.aspx"
+                                                      class="tab-right" id="anchor_Library_nav_1"><em
+                                class="tab-left"><span class="tab-inner"><span class="tab-text"><strong>Library</strong></span></span></em></a>
+                        </li>
+                        <li id="menu_item_program"><a title="Program"
+                                                      href="https://ecampus.phoenix.edu/portal/portal/secure/programsummary.aspx"
+                                                      class="tab-right" id="anchor_Program_nav_1"><em
+                                class="tab-left"><span class="tab-inner"><span class="tab-text"><strong>Program</strong></span></span></em></a>
+                        </li>
+                        <li id="menu_item_account"><a title="Account"
+                                                      href="https://ecampus.phoenix.edu/portal/portal/secure/accountsummary.aspx"
+                                                      class="tab-right" id="anchor_Account_nav_1"><em
+                                class="tab-left"><span class="tab-inner"><span class="tab-text"><strong>Account</strong></span></span></em></a>
+                        </li>
+                        <li id="menu_item_phoenixconnect"><a title="PhoenixConnect"
+                                                             href="https://portal.phoenix.edu/social/" class="tab-right"
+                                                             id="anchor_PhoenixConnect_nav_1"><em
+                                class="tab-left"><span class="tab-inner"><span
+                                class="tab-text"><strong>PhoenixConnect</strong></span></span></em></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subNav">
+
+
+            </div>
+
+
+        </div>
+        <div class="parsys headerPar">
+            <div class="section htmlsnippet">
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="bd-bkg">
+<div id="bd">
+<h1 class="displaynone">eCampus: Homepage</h1>
+
+
+<div id="yui-main" role="">
+<div class="yui-b">
+<div class="parsys mainPar">
+<div class="twocolumn section">
+
+
+<div class="yui-gf">
+<div class="yui-u first printcol" role="complementary">
+    <div class="parsys col1">
+        <div class="panel_1_0 section">
+
+
+            <!-- [Panel Begins] -->
+            <div id="content_business_en_home_jcr_content_pageLayoutPar_twocolumn_mainPar_twocolumn_col1_panel_1_0"
+                 class="quicklinks-list">
+
+                <div class="sectionheader">
+                    <div class="sectionheader-left"><h2 class="thirdpagetitle">Quick Links</h2></div>
+                </div>
+
+                <!-- [PARSYS Begins] -->
+                <div class="parsys parpanelbody">
+                    <div class="quickLinks_4_0 section">
+
+
+                        <!-- [Quick Links 1.1 Begins] -->
+                        <div id="content_business_en_home_jcr_content_pageLayoutPar_twocolumn_b98f_mainPar_twocolumn_col1_panel_1_0_d271_parpanelbody_quicklinks_4_0_quickLinksComp">
+                            <ul class="v-list no-bullet">
+                                <li>
+                                    <a href="#"
+                                       title="Course Contracts">Course Contracts</a></li>
+                                <li><a href="" title="Course Schedule">Course Schedule</a></li>
+                                <li>
+                                    <a href="#"
+                                       title="Pay Records">Pay Records</a></li>
+                                <li>
+                                    <a href="#"
+                                       title="Approved Courses">Approved Courses</a></li>
+                                <li><a href="" title="Faculty Resources">Faculty Resources</a></li>
+                                <li><a href="#"
+                                       title="Faculty Forms">Faculty Forms</a></li>
+                                <li><a href="" title="Faculty Contacts">Faculty Contacts</a></li>
+                                <li><a href="" title="Payroll Contacts">Payroll Contacts</a></li>
+                            </ul>
+                            &nbsp;</div>
+                        <!-- [Quick Links 1.1 Ends] -->
+
+                    </div>
+                </div>
+
+                <!-- [PARSYS Ends] -->
+
+            </div>
+            <!-- [Panel Ends] -->
+        </div>
+        <div class="panel_1_0 section">
+
+
+            <!-- [Panel Begins] -->
+            <div id="content_business_en_home_jcr_content_pageLayoutPar_twocolumn_b98f_mainPar_twocolumn_col1_panel_1_0_a6f2"
+                 style="display: block;" class="messagesnews-list">
+
+                <div class="sectionheader">
+                    <div class="sectionheader-left"><h2 class="thirdpagetitle">Messages</h2></div>
+                </div>
+
+                <!-- [PARSYS Begins] -->
+                <div class="parsys parpanelbody">
+                    <div class="messages_1_0 section">
+
+
+                        <div id="content_business_en_home_jcr_content_pageLayoutPar_twocolumn_b98f_mainPar_twocolumn_col1_panel_1_0_a6f2_parpanelbody_messages_1_0_messagesComp"
+                             style="display: block;">
+                            <ul class="v-list no-bullet"
+                                id="content_business_en_home_jcr_content_pageLayoutPar_twocolumn_b98f_mainPar_twocolumn_col1_panel_1_0_a6f2_parpanelbody_messages_1_0_messagesList">
+                                <li id="ext-gen6">
+                                    <div class="title">IMPORTANT MESSAGES</div>
+                                </li>
+                                <li id="ext-gen7"><a
+                                        href="http://assetscdn.qaols.phoenix.edu/media/pdf/SafeguardStudentPersonalInformation.pdf"
+                                        onclick="">Safeguard Your Student and Personal Information</a></li>
+                                <li id="ext-gen8"><a
+                                        href="http://www.phoenix.edu/tuition_and_financial_options/scholarships.html"
+                                        onclick="">Scholarship Opportunities</a></li>
+                                <li id="ext-gen9"><a href="http://www.uopxmarketplace.com/" onclick="">University
+                                    Marketplace</a></li>
+                                <li id="ext-gen10"><a
+                                        href="#" onclick="">Voter
+                                    Registration</a></li>
+                                <li id="ext-gen11"><a href="" onclick="">"I" Grade Reminder!!</a></li>
+                                <li id="ext-gen12"><a
+                                        href="#"
+                                        title="View All Messages" class="allmessages">View All Messages</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- [PARSYS Ends] -->
+
+            </div>
+            <!-- [Panel Ends] -->
+        </div>
+    </div>
+</div>
+<div class="yui-u" role="main">
+<div class="parsys col2">
+<div class="alerts section">
+
+
+    <div id="content_business_en_home_jcr_content_pageLayoutPar_twocolumn_b98f_mainPar_twocolumn_col2_alerts_alertsComp"
+         style="display:none;">
+        <div class="warning-msg" id="alertBox">
+            <a onclick="closeAlert()" onkeypress="closeAlert()" id="alertshref"
+               class="close-icon right lefticon"
+               href="#"><span class="icon"></span>close</a>
+
+            <div class="msg-container">
+                <div class="icon"></div>
+                <div class="msg"><h2>Alerts</h2>
+                    <ul id="content_business_en_home_jcr_content_pageLayoutPar_twocolumn_b98f_mainPar_twocolumn_col2_alerts_alertsList"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="parbase courseList_1_5 section">
+
+
+    <!-- [My Classes Begins] -->
+    <div class="myclasses-tab">
+        <!-- [Error Begins] -->
+        <div id="courselistError" class="error-msg displaynone">
+            <div class="msg-container">
+                <div class="icon"></div>
+                <div class="msg">
+                    <h2>Error</h2>
+                    Sorry, a system error prevents us from showing your classes at this time. Please try back again
+                    later.
+                </div>
+            </div>
+        </div>
+        <!-- [Error Ends] -->
+
+        <div class="right courserole displaynone">
+            <select id="courserolesddl">
+                <option value="ALL">--SELECT ROLE--</option>
+            </select>
+        </div>
+        <!-- [ Nav2 Begins ] -->
+        <div class="at-subtabnav" id="navcontainer">
+            <ul>
+                <li id="current" class="selected">
+                    <a href="#"
+                       id="ext-gen3">Current Classes</a>
+                </li>
+                <li id="previous">
+                    <a href="#"
+                       id="ext-gen4">Previous</a>
+                </li>
+                <li id="upcoming">
+                    <a href="#"
+                       id="ext-gen5">Future</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- [ Nav2 Ends ] -->
+        <!-- [ course list container div begins ] -->
+        <div id="classescontainer" class="allclassescontainer">
+            <div id="courselistLoading" class=" displaynone">Loading...</div>
+            <div id="panelError" class="coursecontainer noborder nocoursemessage displaynone"></div>
+            <div class="coursecontainer course-type-CURRENT-course-role-ALL course-type-CURRENT-course-role-FACULTY ">
+                <div class="yui-gc">
+                    <div class="yui-u first"><span class="cl-type">Course</span><br><a class="coursetitle"
+                                                                                       href="">MKT/571
+                        - MARKETING</a><br>Schedule:05/08/2012 - 07/02/2013<br>Campus: ONLINE MAIN<br>Group ID:
+                        120508OL07
+                    </div>
+                    <div class="yui-u">
+                        <div class="mlist-container">
+                            <ul class="v-list">
+                                <li class="listgrid37"><a title="Class home"
+                                                          href="">Class
+                                    home</a></li>
+                                <li class="listgrid41"><a title="Syllabus"
+                                                          href="">Syllabus</a>
+                                </li>
+                                <li class="listgrid40"><a title="Class roster"
+                                                          href="">Class roster</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- [ course list container div ends ] -->
+    </div>
+    <!-- [My Classes Ends] -->
+
+
+</div>
+
+<div class="section htmlsnippet">
+
+    <div class="aes-recentactivity-list">
+        <div class="sectionheader">
+            <div class="sectionheader-left"><h2 class="secpagetitle">Recent Activity</h2></div>
+            <div class="sectionheader-left">
+                <a window="/social/index.jspa" href="#"
+                   class="phxc-link gwtaslink"> in PhoenixConnect »</a>
+            </div>
+            <div class="sectionheader-right">
+                <a window="/social/community/support/blog/2012/11/05/an-introduction-to-phoenixconnect"
+                   href="#"
+                   class="customizeview gwtaslink">Learn how to customize this feed »</a>
+            </div>
+            <input type="hidden" id="raw_type" value="ecampus_home">
+
+        </div>
+
+        <div class="aes-listing">
+                <span id="activityStreamContainer"><div>
+                    <ul>
+                        <li class="act-filter">
+                            <ul>
+                                <li class="active" id="idLinkUserActivities"><a class="gwt-Anchor"
+                                                                                title="My Communities"
+                                                                                href="javascript:;"
+                                                                                gatracking="/portal.phoenix.edu/home/loadUserActivities">My
+                                    Communities</a></li>
+                                <li class="" id="idLinkAllActivities"><a class="gwt-Anchor" title="All Communities"
+                                                                         href="javascript:;"
+                                                                         gatracking="/portal.phoenix.edu/home/loadAllActivities">All
+                                    Communities</a></li>
+                                <li class="" id="idLinkConnectionsActivities"><a class="gwt-Anchor"
+                                                                                 title="Friends &amp; Classmates"
+                                                                                 href="javascript:;"
+                                                                                 gatracking="/portal.phoenix.edu/home/FriendsAndClassmates">Friends
+                                    &amp; Classmates</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span>
+                    <ul id="phxConnectActivities" class="aes-act-listing">
+                        <li>
+                            <div class="phxc-act">
+                                <div class="phxc-thumb"><a class="gwt-Anchor checkerByPass" title="View Profile"
+                                                           href="#"
+                                                           gatracking="/portal.phoenix.edu/home/linkAvatarImage"><img
+                                        src="https://portal.qaols.phoenix.edu/social/people/johnman/avatar/128.png?a=-1"></a>
+                                </div>
+                                <div class="phxc-info"><a class="gwt-Anchor name" title="View Profile"
+                                                          href="#"
+                                                          gatracking="/portal.phoenix.edu/home/linkAuthorName">John
+                                    Caspary</a><span
+                                        class="action">posted</span> <a class="gwt-Anchor title checkerByPass"
+                                                                        href="#"
+                                                                        gatracking="/portal.phoenix.edu/home/null-null">Systest
+                                    Discussion - 2100760860</a>
+
+                                    <p><span>arcu nulla nec ligula</span> <a class="gwt-Anchor checkerByPass readmore"
+                                                                             href="javascript:;"
+                                                                             gatracking="/portal.phoenix.edu/home/linkReadMore-null-null"></a>
+                                    </p>
+
+                                    <div class="feedback"><span class="time">14 Days Ago</span> <span
+                                            class="separator"> </span><span class="time">in</span> <a
+                                            class="gwt-Anchor checkerByPass readmore"
+                                            href="#"
+                                            gatracking="/portal.phoenix.edu/home/Education">Education</a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="phxc-act">
+                                <div class="phxc-thumb"><a class="gwt-Anchor checkerByPass" title="View Profile"
+                                                           href="#"
+                                                           gatracking="/portal.phoenix.edu/home/linkAvatarImage"><img
+                                        src="https://portal.qaols.phoenix.edu/social/people/toyshop0078050/avatar/128.png?a=-1"></a>
+                                </div>
+                                <div class="phxc-info"><a class="gwt-Anchor name" title="View Profile"
+                                                          href="#"
+                                                          gatracking="/portal.phoenix.edu/home/linkAuthorName">Yuhirsvzergeaymkjbzu
+                                    Qydvketilxqs</a><span class="action">posted</span> <a
+                                        class="gwt-Anchor title checkerByPass"
+                                        href="#"
+                                        gatracking="/portal.phoenix.edu/home/null-null">Systest
+                                    Discussion - 2070065130</a>
+
+                                    <p><span>Aliquam erat volutpat</span> <a class="gwt-Anchor checkerByPass readmore"
+                                                                             href="javascript:;"
+                                                                             gatracking="/portal.phoenix.edu/home/linkReadMore-null-null"></a>
+                                    </p>
+
+                                    <div class="feedback"><span class="time">14 Days Ago</span> <span
+                                            class="separator"> </span><span class="time">in</span> <a
+                                            class="gwt-Anchor checkerByPass readmore"
+                                            href="#"
+                                            gatracking="/portal.phoenix.edu/home/Education">Education</a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="phxc-act">
+                                <div class="phxc-thumb"><a class="gwt-Anchor checkerByPass" title="View Profile"
+                                                           href="#"
+                                                           gatracking="/portal.phoenix.edu/home/linkAvatarImage"><img
+                                        src="https://portal.qaols.phoenix.edu/social/people/bybe/avatar/128.png?a=-1"></a>
+                                </div>
+                                <div class="phxc-info"><a class="gwt-Anchor name" title="View Profile"
+                                                          href="#"
+                                                          gatracking="/portal.phoenix.edu/home/linkAuthorName">Byron
+                                    Bernard</a><span class="action">posted</span> <a
+                                        class="gwt-Anchor title checkerByPass"
+                                        href="#"
+                                        gatracking="/portal.phoenix.edu/home/null-null">Systest
+                                    Discussion - 2040986037</a>
+
+                                    <p><span>Donec quis risus lectus, sed sollicitudin orci. roin viverra dictum tellus non mattis. Nulla vel...</span>
+                                        <a class="gwt-Anchor checkerByPass readmore"
+                                           href="#"
+                                           gatracking="/portal.phoenix.edu/home/linkReadMore-null-null">Read More</a>
+                                    </p>
+
+                                    <div class="feedback"><span class="time">14 Days Ago</span> <span
+                                            class="separator"> </span><span class="time">in</span> <a
+                                            class="gwt-Anchor checkerByPass readmore"
+                                            href="#"
+                                            gatracking="/portal.phoenix.edu/home/Education">Education</a></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul> </span>
+                    <ul>
+                        <li class="moreactlink"><span id="lastEntryDate" style="display:none;"></span>
+
+                            <div id="getMoreActivities" style=""><a class="gwt-Anchor expandarrow-icon righticon"
+                                                                    href="javascript:;"
+                                                                    gatracking="/portal.phoenix.edu/home/showMoreActivities">Show
+                                <span id="fetchMoreActivitiesCount"></span> more<span class="icon"></span></a></div>
+                            <div></div>
+                        </li>
+                    </ul>
+                </div></span>
+            <ul class="aes-act-listing">
+                <li id="idNotFollowingCommunities" class="actactions" style="display: none;">
+                    <p>PhoenixConnect is a collaboration and communication platform that you can use to discuss topics
+                        relating
+                        to your program of study, get answers to common questions, share goals and interests, and build
+                        your
+                        professional network.</p>
+                    <ul class="actlinks">
+                        <li><a class="gwtaslink"
+                               href="/social/community/support/blog/2012/11/05/an-introduction-to-phoenixconnect"
+                               window="/social/community/support/blog/2012/11/05/an-introduction-to-phoenixconnect"><span
+                                class="jive-icon-med jive-icon-blog"></span>Learn more about PhoenixConnect</a></li>
+                        <li><a class="phxc-link gwtaslink" title="Follow Communities" window="/social/community"
+                               href="/social/community"><span class="jive-icon-med jive-icon-space"></span><span
+                                class="jive-places-name">Explore PhoenixConnect communities</span></a></li>
+                    </ul>
+                </li>
+                <li id="idNoRecentActivityInCommunities" class="actactions" style="display: none;">
+                    <p>There has been no recent activity in your communities.</p>
+                    <ul class="actlinks">
+                        <li><a class="gwtaslink" window="/social/choose-container!input.jspa?contentType=1"
+                               href="/social/choose-container!input.jspa?contentType=1"><span
+                                class="jive-icon-med jive-icon-discussion"></span>Start a discussion</a></li>
+                        <li><a class="gwtaslink" window="/social/community" href="/social/community"><span
+                                class="jive-icon-med jive-icon-space"></span>Find more communities to follow</a></li>
+                    </ul>
+                </li>
+                <li id="idNoRecentActivityForConnections" class="actactions" style="display: none;">
+                    <p>There has been no recent activity with your friends &amp; classmates.</p>
+                    <ul class="actlinks">
+                        <li><a class="gwtaslink" window="/social/people" href="/social/people"><span
+                                class="jive-icon-med jive-icon-space"></span>Find more connections</a></li>
+                    </ul>
+                </li>
+
+                <li id="activityStreamLoading" style="display:none;" class="msg-local"></li>
+                <li id="activity-stream-error-msg" class="error-local" style="display:none;">
+                    <div class="errormessage">
+                        <div class="error-title">We're on it...</div>
+                        <div class="error-txt">Recent activity is currently unavailable.<br>Please <a
+                                onclick="document.location.reload();" href="javascript:;">reload</a> the page or try
+                            again
+                            later.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="panel_1_0 section">
+
+
+    <!-- [Panel Begins] -->
+    <div id="content_business_en_home_jcr_content_pageLayoutPar_twocolumn_mainPar_twocolumn_col2_panel_1_0"
+         class="at-list myunivcontact-list" style="display: block;">
+
+        <div class="sectionheader">
+            <div class="sectionheader-left"><h2 class="thirdpagetitle">My University Contacts</h2></div>
+        </div>
+
+        <!-- [PARSYS Begins] -->
+        <div class="parsys parpanelbody">
+            <div class="section programContacts_1_0">
+
+
+                <div id="content_business_en_home_jcr_content_pageLayoutPar_twocolumn_mainPar_twocolumn_col2_panel_1_0_parpanelbody_programcontacts_1_0_contacts">
+                    <div class="listing">
+                        <ul>
+                            <div class="list-title">MBA - 021</div>
+                            <li>
+                                <div class="at-gf">
+                                    <div class="at-u at-first"><span class="academicphone-icon">                                                <span
+                                            class="icon"></span>                                            </span>
+                                    </div>
+                                    <div class="at-u"><strong>Academic Representative</strong>
+
+                                        <p> ANA KAREN POSADA <br> (480) 557-2660 x5572660 <br> (602) 383-2691 fax<br> <a
+                                                title="AnaKaren.Posada@@phoenix.edu"
+                                                href="mailto:AnaKaren.Posada@@phoenix.edu"></a>
+                                        </p></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <div class="list-title">ND - 000</div>
+                            <li>
+                                <div class="at-gf">
+                                    <div class="at-u at-first"><span class="financialphone-icon">                                                <span
+                                            class="icon"></span>                                            </span>
+                                    </div>
+                                    <div class="at-u"><strong>Financial Advisor</strong>
+
+                                        <p> AMBER MILITELLO <br> (602) 713-6599 x7136599 <br> <a
+                                                title="Amber.Militello@@phoenix.edu"
+                                                href="mailto:Amber.Militello@@phoenix.edu"></a>
+                                        </p></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <div class="list-title">MBA - 021</div>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- [PARSYS Ends] -->
+
+    </div>
+    <!-- [Panel Ends] -->
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+</div>
+</div>
+<div id="complementaryColumn" class="yui-b printcol" role="complementary">
+<div class="complementaryPar parsys">
+<div class="profileBlurb section">
+    <div id="blurb-divProfileBlurb" style="">
+
+        <div class="at-panel librarygroup profilepanel">
+            <div class="border-top">
+                <div class="edge-tl"></div>
+                <div class="edge-tr"></div>
+            </div>
+            <div class="at-panelcontainer">
+                <!-- Graphic Border - End Part 1 -->
+                <div class="bd">
+                    <div class="at-gf">
+                        <div class="at-u at-first">
+                            <a href="/profile/rferolino" id="blurb_linkProfileEditURL"
+                                    ><img
+                                    border="0" height="34" width="34"
+                                    src="https://d3qlakwpo3n83o.cloudfront.net/content/public/02-IMAGE_PROFILE-51c4cfff0838ba0d9aad5a73/renditions/bf2ebd6d-f012-48d0-bd89-aff4de8bc938/profileImage-6a186629-7958-47a7-9fb1-790fb3f0eec8.png"
+                                    alt=""></a>
+                        </div>
+                        <div class="at-u profile-align">
+                            <a class="profilename" title="Click to view the profile" href="/profile/rferolino"
+                               id="blurb_linkProfileFullName"
+                                    ><span
+                                    id="blurb_blurbFullName">ROLANDO FEROLINO</span></a> <br>
+
+                            <div id="blurb_current_status" class="jive-user-status-message">
+                                <div class="profilestatus"><p class="profile-status-p"><span
+                                        id="current-status-body-wrapper-aVG7X3">
+                                <span id="blurb_current_status_text"></span></span>
+                                    <a class="profile-blurb-links-hide-for-others" style="white-space: nowrap;"
+                                       id="blurb_profile_edit_link"
+                                       href="#">[Update Status]</a>
+                                </p></div>
+                            </div>
+                            <div id="blurb_profile_update_status" class="profile-edit" style="display:none">
+                                <textarea name="textarea" class="profile-text-box" id="blurb_statustext"
+                                        ></textarea>
+
+                                <div class="profile-character-remain"><span class="text-area-counter"
+                                                                            style="display:none"></span></div>
+                                <div class="button-container-edit profile-margin">
+                            <span class="button submit-btn"><span class="btn-rightside">
+                                <button class="submit-icon" type="submit"
+                                        >
+                                    <span class="btn-text">Update</span></button>
+                            </span></span>
+                            <span class="button cancel-btn"><span class="btn-rightside">
+                                <button class="cancel-icon" type="submit"
+                                        >
+                                    <span class="btn-text">Cancel</span></button>
+                            </span></span>
+                                </div>
+                            </div>
+                        <span id="profile-blurb-span-percentage-complete" style="display: none;">
+                            <div class="profilestatus2 profile-margin2"><span
+                                    id="blurb_spanProfileCompleteMessage"><strong id="profile-blurb-percent-complete">
+                                100%</strong> Profile Completeness</span>
+                                <span id="profile-blurb-edit-link"><a href="#"
+                                                                      class="profile-blurb-links-hide-for-others"
+                                                                      id="blurb_percentageProfileEditURL">[edit]</a></span>
+                            </div>
+                            <div class="progressmeter2 profile-margin2">
+                                <div class="progressbar2" id="profile-blurb-divProgressBarWidth"
+                                     style="width: 100%;"></div>
+                            </div>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-bottom">
+                <div class="edge-bl"></div>
+                <div class="edge-br"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+<div class="mcannouncements section">
+
+
+    <div id="content_business_en_home_jcr_content_pageLayoutPar_twocolumn_complementaryPar_mcannouncements_announcementsComp"
+         style="display: block;">
+        <div class="psannouncements"
+             id="content_business_en_home_jcr_content_pageLayoutPar_twocolumn_complementaryPar_mcannouncements_announcements">
+            <a target="_blank" href="http://phoenixpatriotmagazine.com/article/summer13/better-future-education"
+               id="ext-gen13"><img
+                    src="https://assetscdn.students.uophx.edu/content/dam/media/images/messagecenter/announcements/PHX_Patriot_ecampus_summer13.jpg"></a>
+        </div>
+    </div>
+
+</div>
+<div class="section htmlsnippet">
+
+    <a href="https://careers.phoenix.edu/careers-overview.html">
+        <img src="https://assetscdn.students.uophx.edu/content/dam/media/images/messagecenter/announcements/ecampus-phoenix-career-services-banner2.gif"
+             alt="Phoenix Career Services">
+    </a>
+
+</div>
+
+<div id="cseWidget" ng-controller="cseSuggestionsController">
+    <div ng-hide="suggestions.length == 0">
+        <h2 class="widget-cse__title">Articles of Interest
+            <div class="widget-cse__header__scroll">
+                <i class="icon-chevron-left"  ng-hide="currentPage == 0" ng-click="currentPage=currentPage-1"
+                   title="scroll backward"></i>
+                <i class="icon-chevron-right" ng-hide="currentPage >= suggestions.length/pageSize - 1"
+                   ng-click="currentPage=currentPage+1" title="scroll forward"></i>
+            </div>
+
+        </h2>
+        <div class="widget-cse__content">
+            <div class="widget-cse__content__item" ng-repeat="suggestion in suggestions | startFrom:currentPage*pageSize | limitTo:pageSize">
+                <div data-index="{{$index + (currentPage*pageSize)}}">
+                    <a href="{{suggestion.url}}" target="_blank">
+                        <img ng-src="{{suggestion.imageUrl}}" class="widget-cse__content__item-title-img"/>
+
+                        <div class="widget-cse__content__item-title">{{suggestion.title}}</div>
+                    </a>
+
+                    <div class="widget-cse__social">
+                        <i class="icon-thumbs-up widget-cse__social-thumbs" ng-click="voteUp($index + (currentPage*pageSize))" title="Like"><span class="widget-cse__social-count">&nbsp;{{suggestion.counters.likes}}</span></i>
+                        <i class="icon-thumbs-down widget-cse__social-thumbs" ng-click="voteDown($index + (currentPage*pageSize))" title="Dislike"><span class="widget-cse__social-count">&nbsp;{{suggestion.counters.dislikes}}</span></i>
+                        <i class="icon-flag widget-cse__social-flag" ng-click="launchFlagCommentModal($index + (currentPage*pageSize))" title="Inappropriate"></i>
+                        <i class="icon-share-sign widget-cse__social-share" ng-click="launchPhoenixConnectModal($index + (currentPage*pageSize))" title="Share"><span class="widget-cse__social-count">&nbsp;{{suggestion.share.social.shareCount}}</span></i>
+                    </div>
+                    <div class="float-left">
+                        <i class="icon-eye-open" title="{{suggestion.viewCount}} views">&nbsp;{{suggestion.counters.views}}</i>
+                    </div>
+
+                    <div class="clear-both"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="umplayer_ada section">
+
+    <!-- [Video Begins]-->
+    <div id="videocontainer" class="video-hpcontainer">
+        <h2 class="thirdpagetitle">Videos of Interest</h2>
+
+        <div class="video">
+            <div id="aeswrapper" style="width: 240px;">
+                <a class="player plain" id="aesPlayer" style="width: 240px; height: 134px; z-index: 1;">
+                    <img src="http://placehold.it/240x150">
+                </a>
+            </div>
+            <ul id="clips">
+                <li><a class="videoclip">
+                    <div class="items">
+                        <div class="thumb"><img
+                                src="https://d3qlakwpo3n83o.cloudfront.net/content/public/01-vid-4b3aaa1ca7ad6f9497329b8762b54922/thumbnails/public/910826c1-4eb0-4be5-bcea-30caa1d565e9/cq5dam.thumbnail.67.50.png"
+                                alt=""><span class="nowplaying" style="display:block"></span><span class="playicon"
+                                                                                                   style="display:none"></span><span
+                                class="pllength" style="display:none">2:40</span></div>
+                        <div class="desc"><span class="pltitle" title="How WorldBlu Began">How WorldBlu Began</span>
+                        </div>
+                    </div>
+                </a>
+
+                    <div class="plmoreinfo"><a
+                            href="/medialibrary/videodetails.01-vid-4b3aaa1ca7ad6f9497329b8762b54922.html"
+                            title="More info and related videos" target="_parent">More info »</a></div>
+                </li>
+                <li><a class="videoclip">
+                    <div class="items">
+                        <div class="thumb"><img
+                                src="https://d3qlakwpo3n83o.cloudfront.net/content/public/50V101215000715451/thumbnails/public/ea82127d-1937-4893-a85a-9020d68973c6/cq5dam.thumbnail.67.50.png"
+                                alt=""><span class="nowplaying" style="display:none"></span><span class="playicon"
+                                                                                                  style="display:block"></span><span
+                                class="pllength" style="display:block">4:56</span></div>
+                        <div class="desc"><span class="pltitle" title="The Case For Change">The Case For Change</span>
+                        </div>
+                    </div>
+                </a>
+
+                    <div class="plmoreinfo"><a href="/medialibrary/videodetails.50V101215000715451.html"
+                                               title="More info and related videos" target="_parent">More info »</a>
+                    </div>
+                </li>
+            </ul>
+            <div id="servedby" style="display:none;"></div>
+        </div>
+        <div class="allvideos" id="mvideos"><a href="/medialibrary/medialibrary.html" title="" target="_parent">View
+            More
+            Videos »</a></div>
+        <div>
+            <meta name="Topaz Monitor" content="Apollo.Medialibrary.umplayer">
+        </div>
+    </div>
+    <!-- [Video Ends]-->
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+<% if (config.environment === 'prod') { %>
+<script src="/scripts/scripts.min.js?v=<%= config.hash('./.temp/scripts/scripts.min.js') %>"></script>
+<% } else { %>
+<script data-main="/scripts/main.js"
+        src="/scripts/libs/require.js?v=<%= config.hash('./.temp/scripts/libs/require.js') %>"></script>
+<% } %>
+
+</body>
+</html>
