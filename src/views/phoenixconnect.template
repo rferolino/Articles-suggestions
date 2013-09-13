@@ -1,8 +1,11 @@
 <div id="addNewModal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-body">
-
         <div>
-            <textarea id="newpost-comment" ng-model="form.comment" placeholder="Please share a comment about this article..."></textarea>
+            <textarea id="cse-newpost-comment" ng-hide="duplicated" ng-model="form.comment" placeholder="Please share a comment about this article..."></textarea>
+            <div id="cse-duplicated-share" ng-show="duplicated">
+                <span class="widget-cse__social-share--duplicate">This article has already been shared in the selected learning community</span>
+                <button class="btn btn-info" ng-click="joinDiscussion()">Join the Phoenix Connect discussion</button>
+            </div>
         </div>
 
         <div id="article-card-container">

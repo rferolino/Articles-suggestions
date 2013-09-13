@@ -34,7 +34,7 @@ angular.module('fundoo.services', []).factory('createDialog', ["$document", "$co
       var key;
       var idAttr = options.id ? ' id="' + options.id + '" ' : '';
       var defaultFooter = '<button class="btn" ng-click="$modalCancel()">Cancel</button>' +
-        '<button class="btn btn-primary" ng-click="$modalSuccess()">{{$modalSuccessLabel}}</button>';
+        '<button class="btn btn-primary" id="cseModalSuccessBtn" ng-click="$modalSuccess()">{{$modalSuccessLabel}}</button>';
       var footerTemplate = '<div class="modal-footer">' +
         (options.footerTemplate || defaultFooter) +
         '</div>';
@@ -87,8 +87,9 @@ angular.module('fundoo.services', []).factory('createDialog', ["$document", "$co
 
       body.bind('keydown', handleEscPressed);
 
-      var ctrl, locals,
-        scope = options.scope || $rootScope.$new();
+      var ctrl,
+          locals,
+          scope = options.scope || $rootScope.$new();
 
       scope.$title = options.title;
       scope.$modalCancel = closeFn;

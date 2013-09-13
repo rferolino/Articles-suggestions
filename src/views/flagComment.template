@@ -14,11 +14,12 @@
                         <span class="date">{{ article.publishedDateTime|fromNow }}</span>
                     </div>
                 </div>
-                <div class="snippet">{{ article.excerpt }}</div>
+                <div class="widget-cse__content__item-excerpt">{{ article.excerpt }}</div>
                 <div class="clear"></div>
             </div>
         </div>
     </div>
 </div>
+
 
 

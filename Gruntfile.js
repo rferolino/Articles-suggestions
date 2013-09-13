@@ -146,6 +146,12 @@
               src: 'font/**/*.*',
               dest: './dist/',
               expand: true
+            },
+            {
+              cwd: './src/',
+              src: 'te/**/*.*',
+              dest: './dist/',
+              expand: true
             }
           ]
         },
@@ -210,7 +216,8 @@
             './.temp/scripts/views.js': './.temp/views/**/*.html'
           },
           options: {
-            trim: './.temp'
+            trim: './.temp',
+            module: 'cseWidget'
           }
         }
       },

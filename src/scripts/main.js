@@ -27,9 +27,12 @@
             },
             'run': {
                 deps: ['cseWidget']
+            },
+            'views': {
+                deps: ['cseWidget']
             }
         }
-    }, ['require','libs/moment', 'libs/createDialog', 'controllers/cseSuggestionsController', 'filters/pageFilter', 'filters/timeMoment','config','run'], function (require) {
+    }, ['require','libs/moment', 'libs/createDialog', 'controllers/cseSuggestionsController', 'filters/pageFilter', 'filters/timeMoment','config','run', 'views'], function (require) {
         return angular.element(document).ready(function () {
             return require(['bootstrap']);
         });
