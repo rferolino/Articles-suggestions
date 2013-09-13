@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AngularFun
 *By [@CaryLandholt](https://twitter.com/carylandholt)*
 
@@ -218,3 +219,9 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 * Add many more unit tests :(
 * Add more documentation :(
 * Screencasts :)
+=======
+Articles-suggestions
+====================
+
+This is a sample angular.js project. It is a widget for suggesting articles to users. The data services are mock. 
+>>>>>>> 33afeb3b0ce86d342d74d717c3b97d57ad36a5b0
