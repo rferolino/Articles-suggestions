@@ -8,6 +8,8 @@ What you need:
 * Express
 * Grunt
 
+Using AngularFun for boilerplate project. See: https://github.com/CaryLandholt/AngularFun
+
 Installation instruction:
 
 * Clone the github project in your local directory
