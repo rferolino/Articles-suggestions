@@ -5,8 +5,11 @@ This is a sample angular.js project. It is a widget for suggesting articles to u
 
 What you need:
 * Node.js
-* 
+* Express
+* Grunt
+
 Installation instruction:
+
 * Clone the github project in your local directory
 * Run "npm install"
 * Run "grunt". This creates a distribution directory: .temp and dist
